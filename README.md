@@ -2,7 +2,7 @@
 
 **Wireless Network Research Platform**
 
-*From the minds of IBM Bob & Daneyand*
+*From the minds of IBM Bob & Daneyand* | 
 WINLab, Rutgers University
 
 ---
