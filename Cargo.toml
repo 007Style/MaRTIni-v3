@@ -1,0 +1,44 @@
+[package]
+name = "martini"
+version = "0.1.0"
+edition = "2021"
+authors = [
+    "Daneyand Singley",
+    "Roland Wunderlich",
+    "Ramnath Ravindran",
+]
+description = "MaRTIni v3 — Wireless Network Research Platform (WINLab, Rutgers University)"
+
+[lib]
+name = "martini"
+path = "src/lib.rs"
+
+[[bin]]
+name = "martini"
+path = "src/main.rs"
+
+[dependencies]
+eframe = "0.28"
+egui = "0.28"
+egui_plot = "0.28"
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+serde_json = "1"
+noise = "0.9"
+rand = "0.8"
+log = "0.4"
+env_logger = "0.11"
+bincode = "1"
+wasmtime = { version = "25", optional = true }
+
+[features]
+default = []
+wasm-plugins = ["dep:wasmtime"]
+
+[dev-dependencies]
+# Integration tests live under tests/
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

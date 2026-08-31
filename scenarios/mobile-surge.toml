@@ -1,0 +1,15 @@
+# Scenario: Mobile Surge
+# Injects 50 extra mobiles into a hotspot zone at tick 50, stressing capacity.
+
+name = "Mobile Surge"
+description = "Hotspot injection — 50 extra mobiles appear in zone A at tick 50."
+
+[[events]]
+tick = 50
+kind = "hotspot_inject"
+payload = '{"zone": "A", "count": 50, "x": 500.0, "y": 500.0, "radius": 150.0}'
+
+[[events]]
+tick = 200
+kind = "hotspot_clear"
+payload = '{"zone": "A"}'

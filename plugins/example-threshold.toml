@@ -1,0 +1,11 @@
+# Example Threshold Plugin
+# Declarative handoff protocol: hand off if SINR drops below 5 dB.
+
+name = "Example Threshold"
+description = "Simple threshold-based handoff — hand off when SINR < 5 dB."
+
+[[rules]]
+field = "sinr_db"
+op = "lt"
+threshold = 5.0
+action = "handoff_to_best"

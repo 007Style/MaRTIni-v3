@@ -1,0 +1,17 @@
+# Scenario: Tower Failure
+# Simulates a single base station going offline at tick 100.
+
+name = "Tower Failure"
+description = "Base station 3 fails at tick 100. Mobiles must hand off to neighbours."
+
+[[events]]
+tick = 100
+kind = "tower_failure"
+target_base = 3
+payload = ""
+
+[[events]]
+tick = 300
+kind = "tower_restore"
+target_base = 3
+payload = ""
