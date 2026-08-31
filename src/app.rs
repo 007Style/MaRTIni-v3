@@ -139,7 +139,8 @@ impl eframe::App for MaRTIniApp {
                 .collapsible(false)
                 .resizable(false)
                 .show(ctx, |ui| {
-                    ui.heading("MaRTIni v3 — Wireless Network Research Platform");
+                    ui.heading("MaRTIni v3 — Mobility and Research Testbed Initiative");
+                    ui.label(egui::RichText::new("From the minds of IBM Bob & Daneyand").italics().color(egui::Color32::GRAY));
                     ui.label("WINLab, Rutgers University");
                     ui.separator();
                     ui.label("Authors:");

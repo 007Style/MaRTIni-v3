@@ -1,6 +1,8 @@
-# MaRTIni v3 — Manhattan Radio and Telecommunications Interactive Network Simulator
+# MaRTIni v3 — Mobility and Research Testbed Initiative
 
-**Wireless Network Research Platform**  
+**Wireless Network Research Platform**
+
+*From the minds of IBM Bob & Daneyand*
 WINLab, Rutgers University
 
 ---

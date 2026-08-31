@@ -7,7 +7,7 @@ authors = [
     "Roland Wunderlich",
     "Ramnath Ravindran",
 ]
-description = "MaRTIni v3 — Wireless Network Research Platform (WINLab, Rutgers University)"
+description = "MaRTIni v3 — Mobility and Research Testbed Initiative (WINLab, Rutgers University)"
 
 [lib]
 name = "martini"
